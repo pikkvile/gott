@@ -4,7 +4,7 @@
   "description": "App to help find someone to share a car",
   "main": "src/index.js",
   "scripts": {
-    "test": "export GOTT_ENV=test && node_modules/.bin/mocha -w",
+    "test": ".\\node_modules\\.bin\\mocha",
     "start": "node src/index.js"
   },
   "author": "pikkvile",

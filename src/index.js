@@ -12,6 +12,8 @@ app.set('view engine', 'pug');
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
+app.get('/', (req, res) => res.render('index'));
+
 app.post('/proposal', (req, res) =>
     proposals.process(new Proposal(req))
     .then(() => res.sendStatus(200)));
